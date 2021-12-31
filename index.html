@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Vindo!</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="icon" href="assets/icons/icon-aba-navegador/famous_navegador.png">
+
+       <!-- Icon Menu-->
+       <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+       rel="stylesheet"
+       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+       crossorigin="anonymous">
+</head>
+<body>
+
+    <section class="top">
+        <div class="headerTop">
+            <header>
+                <div class="btn-menu" onclick="toggleMenu()" id="btn-menu"></div>
+                <div class="esquerdaHeader" id="esquerdaHeader">
+                    <img src="assets/icons/logo-site/200.png" alt="logo" width="250">
+                </div>
+    
+                <div class="direitaHeader">
+                    <a href="login.html">LOGIN</a>
+                    <a href="inscreve-se.html">INSCREVA-SE</a>
+                    <a href="">PLANOS</a>
+                    <a class="paraCriadores" href="">PARA CRIADORES</a>
+                    <div></div>
+                </div>
+                
+            </header>
+        </div>
+
+        <div class="containerDireita">
+            <h1>É som por todos os lados.</h1>
+        </div>
+    </section>
+
+    <section class="middle reveal">
+        <div class="containerMiddleEsquerda">
+            <img src="assets/icons/logo-site/icon-alta-resolucao.png" alt="logo" width="300">
+
+            <h2 class="reveal">Escolha o plano ideal para você.</h2>
+        </div>
+
+        <div class="containerMiddleDireita">
+            <div class="planoUniversitario reveal">
+                <h3>Assinatura<br> Universitária
+                    R$ 8,50 por mês</h3>
+                    <button>Teste Gratuito</button>
+            </div>
+
+            <div class="individual reveal">
+                <h3>Assinatura<br>
+                    Solo R$ 16,90 por mês</h3>
+
+                    <button>Teste Gratuito</button>
+            </div>
+
+            <div class="familiar reveal">
+                <h3>Assinatura<br>
+                    Familiar
+                    
+                    R$ 24,90 por mês</h3>
+
+                    <button>Teste Gratuito</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="bottom">
+        <video id="vid" src="assets/arquivos-HTML-images/index/video/login.mp4" autoplay muted loop></video>
+    </video>
+    </div>
+
+    <footer></footer>
+
+    <script >
+        function toggleMenu(){
+            let toggle = document.querySelector(".btn-menu");
+            toggle.classList.toggle("active")
+            let toggleMenu = document.querySelector(".direitaHeader");
+            toggleMenu.classList.toggle("active")
+    }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
